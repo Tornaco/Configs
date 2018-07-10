@@ -1,4 +1,4 @@
-i.idea/
+.idea/
 target/
 *.class
 .DS_Store
