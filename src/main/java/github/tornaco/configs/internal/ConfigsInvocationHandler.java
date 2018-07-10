@@ -65,6 +65,14 @@ public class ConfigsInvocationHandler implements InvocationHandler {
                 return Boolean.parseBoolean(String.valueOf(value));
             } else if (returnType == long.class || returnType == Long.class) {
                 return Long.parseLong(String.valueOf(value));
+            } else if (returnType == float.class || returnType == Float.class) {
+                return Float.parseFloat(String.valueOf(value));
+            } else if (returnType == double.class || returnType == Double.class) {
+                return Double.parseDouble(String.valueOf(value));
+            } else if (returnType == short.class || returnType == Short.class) {
+                return Short.parseShort(String.valueOf(value));
+            } else {
+                // Not support yet.
             }
         } else {
             // Check if string.
